@@ -8,7 +8,6 @@ var colors = [
     'palevioletred',
     'tomato'
 ]
-
 btn.addEventListener('click',function(){
     body.style.backgroundColor = colors[parseInt(Math.random() * colors.length)];
 });
