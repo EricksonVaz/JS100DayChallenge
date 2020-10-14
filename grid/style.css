@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 20vh 60vh 20vh;
+    grid-template-areas: "top-left header"
+                          "aside main"
+                          "aside footer";
+}
+.left-top{
+    background-color: red;
+    grid-area: top-left;
+}
+.header{
+    background-color: blueviolet;
+    grid-area: header;
+}
+.aside{
+    background-color: green;
+    grid-area: aside;
+}
+.main{
+    background-color: hotpink;
+    grid-area: main;
+}
+.footer{
+    background-color: yellow;
+    grid-area: footer;
+}
