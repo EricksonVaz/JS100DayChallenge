@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('../day6/img/contBcg-1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+img{
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: -90px;
+}
+button{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 2px solid orange;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s;
+}
+button:hover{
+    background-color: orange;
+    border: 2px solid white;
+}
+.prev{
+    order: 0;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+}
+p.item:nth-of-type(2n){
+    margin-bottom: 25px;
+}
+.text{
+    position: relative;
+    bottom: 50px;
+}
+.name{
+    font-size: 35px;
+}
+.next{
+    order: 2;
+}
+.title h2{
+    color: orange;
+    font-weight: 400;
+    font-size: 30px;
+}
+.quotation svg{
+    width: 50px;
+    color: orange;
+}
+.classification{
+    margin: 10px 0;
+    font-size: 25px;
+}
