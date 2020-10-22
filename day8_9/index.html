@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 & 9-Our Store Section filter and Modal</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="container-img">
+            <span class="close">&times;</span>
+            <img src="img/cake-1.jpeg" alt="moadl_imag">
+        </div>
+        <div class="modal-control prev"></div>
+        <div class="modal-control next"></div>
+    </div>
+    <h2><span class="sub">Our</span> Store</h2>
+    <div class="filter">
+        <ul class="categories">
+            <li class="item">
+                <a href="#" data-type="all">all</a>
+            </li>
+            <li class="item">
+                <a href="#" data-type="cakes">cakes</a>
+            </li>
+            <li class="item">
+                <a href="#" data-type="cupcakes">cupcakes</a>
+            </li>
+            <li class="item">
+                <a href="#" data-type="sweets">sweets</a>
+            </li>
+            <li class="item">
+                <a href="#" data-type="doughnuts">doughnuts</a>
+            </li>
+        </ul>
+        <form>
+            <button type="submit">
+                <span class="material-icons">
+                    search
+                </span>
+            </button>
+            <input type="text" id="search" placeholder="items...">
+        </form>
+    </div>
+    <div class="container">
+        <div class="item" data-type-filter="sweets">
+            <div class="image">
+                <img src="img/sweets-1.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">sweet item</p>
+                <p class="price">$ 5</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="cupcakes">
+            <div class="image">
+                <img src="img/cupcake-1.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">cupcake item</p>
+                <p class="price">$ 5</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="cakes">
+            <div class="image">
+                <img src="img/cake-1.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">cake item</p>
+                <p class="price">$ 5</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="doughnuts">
+            <div class="image">
+                <img src="img/doughnut-1.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">dougnut item</p>
+                <p class="price">$ 5</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="sweets">
+            <div class="image">
+                <img src="img/sweets-2.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">sweet item</p>
+                <p class="price">$ 10</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="cupcakes">
+            <div class="image">
+                <img src="img/cupcake-2.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">cupcake item</p>
+                <p class="price">$ 10</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="cakes">
+            <div class="image">
+                <img src="img/cake-2.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">cake item</p>
+                <p class="price">$ 10</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="doughnuts">
+            <div class="image">
+                <img src="img/doughnut-2.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">dougnut item</p>
+                <p class="price">$ 10</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="sweets">
+            <div class="image">
+                <img src="img/sweets-3.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">sweet item</p>
+                <p class="price">$ 15</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="cupcakes">
+            <div class="image">
+                <img src="img/cupcake-3.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">cupcake item</p>
+                <p class="price">$ 15</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="cakes">
+            <div class="image">
+                <img src="img/cake-3.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">cake item</p>
+                <p class="price">$ 15</p>
+            </div>
+        </div>
+        <div class="item" data-type-filter="doughnuts">
+            <div class="image">
+                <img src="img/doughnut-3.jpeg" alt="">
+                <span class="material-icons cart">
+                    shopping_cart
+                </span>
+            </div>
+            <div class="label">
+                <p class="name">dougnut item</p>
+                <p class="price">$ 15</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

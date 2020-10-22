@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Kaushan Script', cursive;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.349);
+    z-index: 1;
+}
+.show-overlay{
+    display: block;
+}
+.modal{
+    display: flex;
+    position: fixed;
+    max-width:650px;
+    align-items: center;
+    z-index: 2;
+    transform: scale(0) translateY(40%);
+    opacity: 0;
+    transition: transform 1s,opacity .5s;
+}
+.show-modal{
+    transform: scale(1) translate(0,40%);
+    opacity: 1;
+}
+.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-35px);
+    margin-bottom: 10px;
+    z-index: 3;
+    background-color:violet;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: font-size .6s;
+}
+.close:hover{
+    font-size: 35px;
+}
+.modal img{
+    border-radius: 12px;
+    width: 100%;
+}
+.modal div{
+    margin-right: 10px;
+}
+.container-img{
+    order: 1;
+    position: relative;
+}
+.prev{
+    order: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 30px solid violet;
+    border-bottom: 20px solid transparent;
+}
+.modal-control{
+    cursor: pointer;
+    transition: all .5s;
+}
+.modal-control:hover{
+    transform: scale(1.1);
+}
+.next{
+    order: 2;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 30px solid violet;
+    border-bottom: 20px solid transparent;
+}
+h2{
+    font-size: 45px;
+}
+.sub{
+    font-size: 38px;
+    color: palevioletred;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 40px;
+    width: 600px;
+    margin: 20px 0;
+}
+.categories > .item{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .5s, color .5s;
+}
+.categories > .item:hover{
+    background-color: black;
+}
+.categories > .item a{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: black;
+    transition: color .5s;
+}
+.categories > .item:hover a{
+    color: palevioletred;
+}
+form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 15px 0;
+}
+#search{
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    flex-basis: 400px;
+    border-radius: 5px;
+}
+button[type='submit']{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(223, 139, 167);
+    color: white;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+.container > .item{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+    flex-basis: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    position: relative;
+    flex-basis: 230px;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    transition: all .5s;
+}
+.cart{
+    background-color: rgb(255, 217, 0);
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -24px;
+    right: -45px;
+    transition: all .7s;
+    
+}
+.container > .item:hover .image img{
+    transform: scale(1.1);
+}
+.container > .item:hover .cart{
+    bottom: -8px;
+    right: -4px;
+}
+.label{
+    flex-basis: 60px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.container > .hidden{
+    display: none;
+}
+
+@media (max-width: 640px){
+    .container{
+        max-width: 100%;
+    }
+    .categories{
+        width: 100%;
+        
+        justify-content: center;
+    }
+    .categories > .item{
+        margin: 10px 10px;
+    }
+}

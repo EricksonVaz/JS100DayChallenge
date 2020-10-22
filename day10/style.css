@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    font-family: monospace;
+}
+.container{
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows: 2fr repeat(5,1fr);
+    grid-template-areas: "sc sc sc sc"
+                         "bx bd bm ba"
+                         "bq b9 b8 b7"
+                         "b6 b5 b4 b3"
+                         "b2 b1 b0 be"
+                         "bc bb bb bb";
+}
+.container::after{
+    content: "";
+    grid-area: bb;
+    border: .5px solid black;
+}
+.screen{
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    grid-area: sc;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-size: 70px;
+}
+.button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border: .5px solid black;
+}
+.orange{
+    background-color: orange;
+}
+.gray{
+    background-color: rgb(182, 182, 182);
+}
+.red{
+    background-color: tomato;
+}
+.green{
+    background-color: yellowgreen;
+}
+.bx{
+    grid-area: bx;
+}
+.bd{
+    grid-area: bd;
+}
+.bm{
+    grid-area: bm;
+}
+.ba{
+    grid-area: ba;
+}
+.bq{
+    grid-area: bq;
+}
+.b9{
+    grid-area: b9;
+}
+.b8{
+    grid-area: b8;
+}
+.b7{
+    grid-area: b7;
+}
+.b6{
+    grid-area: b6;
+}
+.b5{
+    grid-area: b5;
+}
+.b4{
+    grid-area: b4;
+}
+.b3{
+    grid-area: b3;
+}
+.b2{
+    grid-area: b2;
+}
+.b1{
+    grid-area: b1;
+}
+.b0{
+    grid-area: b0;
+}
+.be{
+    grid-area: be;
+}
+.bc{
+    grid-area: bc;
+}
