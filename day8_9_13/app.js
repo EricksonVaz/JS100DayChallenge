@@ -11,10 +11,12 @@
 
  items.forEach((el,index)=>{
      el.addEventListener('click',function(e){
-         modal.querySelector('img').src = el.querySelector('img').src;
-         modalNavigation(index)
-         overlay.classList.add('show-overlay');
-         modal.classList.add('show-modal');
+         if(!e.target.classList.contains('cart')){
+            modal.querySelector('img').src = el.querySelector('img').src;
+            modalNavigation(index)
+            overlay.classList.add('show-overlay');
+            modal.classList.add('show-modal');
+         }
      })
  });
 
