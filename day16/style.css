@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+header{
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+aside{
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px;
+    align-self: center;
+    transform: translateY(-40%);
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(120,120,120,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(120,120,120,1);
+    box-shadow: 0px 0px 6px 0px rgba(120,120,120,1);
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.error{
+    font-size: 11px;
+    color: tomato;
+    font-weight: bold;
+    display: none;
+}
+.error.show{
+    display: block;
+}
+.input-group input{
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 600;
+    background-color: gainsboro;
+    border: 1px solid transparent;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+}
+.input-group .material-icons{
+    display: flex;
+    color: white;
+    background-color: #2980b9;
+    align-self: stretch;
+    align-items: center;
+    padding: 0 2px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+form button{
+    cursor: pointer;
+    padding: 8px 0;
+    width: 80px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    transition: all .5s;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+form button:hover{
+    color: #3498db;
+    background-color: white;
+    border: 1px solid  #3498db;
+}
+main{
+    max-width: 845px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    margin: 10px;
+    border-radius: 5px;
+    flex-basis: 250px;
+    padding: 10px;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(120, 120, 120, 0.719);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(120, 120, 120, 0.719);
+    box-shadow: 0px 0px 6px 0px rgba(120, 120, 120, 0.719);
+}
+.card img{
+    width: 100%;
+    margin-bottom: 8px;
+}
+.card .info{
+    margin-bottom: 8px;
+    display: flex;
+}
+.info>small:first-of-type{
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+.info>small.custumer{
+    border: 1px solid  rgb(112, 170, 24);
+    background-color: rgb(112, 170, 24);
+}
+.info>small.course{
+    border: 1px solid rgb(24, 99, 170);
+    background-color: rgb(24, 99, 170);
+}
+.info>small.author{
+    border: 1px solid rgb(218, 87, 26);
+    background-color: rgb(218, 87, 26);
+}
