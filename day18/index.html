@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18 -Budget App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Budget APP</h1>
+    </header>
+    <form class="calculate">
+        <label for="budget">Please Enter your Budget</label>
+        <input type="number" id="budget" min="0">
+        <button type="submit">Calculate</button>
+    </form>
+    <div class="review">
+        <div class="card">
+            <h3>Budget</h3>
+            <span class="material-icons">
+                payments
+            </span>
+            <span class="amount">$2100</span>
+        </div>
+        <div class="card">
+            <h3>Expenses</h3>
+            <span class="material-icons">
+                credit_card
+            </span>
+            <span class="amount">$2100</span>
+        </div>
+        <div class="card">
+            <h3>Balance</h3>
+            <span class="material-icons">
+                attach_money
+            </span>
+            <span class="amount">$2100</span>
+        </div>
+    </div>
+    <form class="add-expense">
+        <label for="expense-title">Please enter your expense</label>
+        <input type="text" id="expense-title">
+        <label for="expense-amount">Please enter expense amount</label>
+        <input type="number" id="expense-amount" min="0">
+        <button type="submit">Add Expense</button>
+    </form>
+    <div class="expenses-list">
+        <table>
+            <tr>
+                <th>Expense Title</th>
+                <th>Expense value</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

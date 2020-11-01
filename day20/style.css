@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+header{
+    background-color: gainsboro;
+    flex-basis: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 200px;
+    width: 100%;
+}
+.lds-default{
+    color: royalblue;
+}
+.hidde{
+    display: none;
+}
+main{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.info label{
+    font-size: 15px;
+    margin: 0 10px;
+}
+.info p{
+    font-size: 15px;
+    background-color: gray;
+    padding: 2px;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    border-top: 2px solid gainsboro;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
