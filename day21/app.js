@@ -14,14 +14,10 @@
 
         let date1 = new Date();
         var curenteHours ;
-        if(date1.getMinutes()<=15){
+        if(date1.getMinutes()<=45){
             curenteHours = (-90 + (date1.getHours()*30));
-        }else if(date1.getMinutes()<=30){
-            curenteHours = (-90 + (date1.getHours()*31));
-        }else if(date1.getMinutes()<=45){
-            curenteHours = (-90 + (date1.getHours()*32));
         }else{
-            curenteHours = (-90 + (date1.getHours()*33));
+            curenteHours = (-90 + (date1.getHours()*32));
         }
 
         
